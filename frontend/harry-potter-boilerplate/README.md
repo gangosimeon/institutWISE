@@ -138,15 +138,6 @@ Notre site doit contenir:
 - Balises HTML5 sémantiques
 - Propriétés personnalisées CSS
 - Flexbox + Media queries
-- [React](https://reactjs.org/) - Librairie JavaScript
-- [Material-UI](https://mui.com/) - Composants UI personnalisés
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS le plus populaire
-- [Sass](https://sass-lang.com/) - Préprocesseur CSS
-- [Redux](https://redux.js.org/) - Gestionnaire d'état
-- [TypeScript](https://www.typescriptlang.org/) - Type checker
-  ...
-
-> Ce ne sont que des exemples. Supprimez cette note et remplacez la liste ci-dessus par vos propres choix.
 
 ### ⚫ Ce que j'ai appris
 
