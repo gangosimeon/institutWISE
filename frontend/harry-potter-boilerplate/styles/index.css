@@ -68,8 +68,7 @@ div a img{
 .cardContent, .personnageContent,.magieContent,.herbologiesContent{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
+  justify-content: center;/*Justify-content permet de centrer les elements cards */
 }
 
 .card{
@@ -83,7 +82,6 @@ div a img{
   background-color: aliceblue;
   transition: transform .2s; /*Zooommm*/
   font-size: 20px;
-
 }
 .card   a{
   color:  rgb(129, 129, 240);
@@ -113,7 +111,6 @@ footer{
   text-align: center;
   padding: 1px 0;
   margin-top: 20px;
-  /* position: sticky; */
 }
 
 /*Import et utilisation la police "harryp" pour l'ensemble de la page grâce à `@font-face`. */
