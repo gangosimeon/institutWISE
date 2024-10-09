@@ -4,7 +4,7 @@ body{
   padding: 0;
   color: white;
   font-family:harryp ;
-  background-image: url(/assets/images/poudlard-bg.jpeg);
+  background-image: url(/assets/images/poudlard-bg.jpeg);/*Pour definir l'image de fond*/
   background-attachment: fixed;
   background-size: cover;
 }
@@ -15,7 +15,6 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  position: sticky;
 }
 ul li {
   display: inline;

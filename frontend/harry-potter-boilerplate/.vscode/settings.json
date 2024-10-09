@@ -5,5 +5,6 @@
     "magies",
     "personnages",
     "Rakotonirina"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
