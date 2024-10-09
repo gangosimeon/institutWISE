@@ -83,9 +83,9 @@ Notre site doit contenir:
 
 ## 📌 Mon processus
 - Préparer un éditeur de texte
-  .Visual Studio Code
+  - Visual Studio Code
 - Créer un fichier HTML
-  .index.html
+  - index.html
 - Structure de page HTML utilisée
 ```
 <!DOCTYPE html>
