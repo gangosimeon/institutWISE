@@ -5,9 +5,9 @@ Notre site doit contenir:
 -Barre de navigation: Une barre de navigation bien visible avec un grand titre et des sections correspondant aux principaux thèmes du site (personnages, magies, herbologies).
 -Message de bienvenue: Introduction engageante sur Harry Potter, l'œuvre de J.K. Rowling et son impact.
 -Thèmes principaux:
-    .Personnages : Un focus sur les trois protagonistes principaux.
-    .Magies : Une explication des trois types de magie courants dans l'univers.
-    .Herbologies : Description des trois plantes magiques importantes.
+    -Personnages : Un focus sur les trois protagonistes principaux.
+    -Magies : Une explication des trois types de magie courants dans l'univers.
+    -Herbologies : Description des trois plantes magiques importantes.
     Ces trois éléments doivent être présenter sous forme de cartes avec une animation au survol.
 -Pied de page: Inclut une description du site, les droits d'auteur et un lien vers mon GitHub .
 
