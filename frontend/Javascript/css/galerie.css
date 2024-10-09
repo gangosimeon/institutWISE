@@ -1,0 +1,13 @@
+#galerie img {
+  border: solid 5px white;
+  padding: 0px;
+  width: 200px; 
+  height: 200px;
+  position:center;
+} 
+
+#galerie{
+  padding: 30px;
+  background-color: rgb(155, 155, 1555,0.4);
+  color: var(--white);
+}

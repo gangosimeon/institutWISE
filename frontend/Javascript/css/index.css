@@ -1,0 +1,80 @@
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+  color: aliceblue;
+  border-collapse: collapse;
+  /* position: fixed; */
+}
+.menus a{
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  
+}
+
+#pageContent {
+  padding: 250px 10px;
+  background-image: url(../images/soi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  width: 100px;  /* Largeur de 100 pixels */
+  height: 30px; /* Hauteur de 30 pixels */
+}
+
+#pictInfo{
+  padding: 40px;
+  background-color: rgb(155, 155, 1555,0.4);
+  color: white;
+  width: 220px;
+  height: 220px;
+  float: right;
+}
+
+#imageContainer{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 0%;
+  padding: 0%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 3s, visibility 3s;
+}
+
+#imageContainer img{
+  border:5px solid white;
+  height: 400px;
+  width: 500px;
+}
+#imageContainer.visible{
+  opacity: 1;
+  visibility: visible;
+}

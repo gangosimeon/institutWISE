@@ -1,0 +1,31 @@
+article{
+  display: inline-block;
+  width: 25%;
+  background-color: aquamarine;
+}
+
+main, aside{
+  display: inline-block;
+  vertical-align: middle;
+}
+img{
+  width: 200px;
+  height: 100px;
+}
+main{
+  width: 70%;
+}
+
+aside{
+  width: 20%;
+  background-color: brown;
+  color: aliceblue;
+  padding: 10px;
+
+}
+#pageContent{
+  text-align: center;
+}
+aside> a{
+  color: aliceblue;
+}

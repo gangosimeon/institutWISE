@@ -1,0 +1,35 @@
+/**
+ * @subject #1 (alphabet-sum) - Votre programme doit imprimer la somme totale de la position alphabetique (index basE sur zero) de tous les caracteres de la chaine donnEe "n"
+ * @exemple n = "HELLO WORLD !" | result -> 114 | n = "AAAA =-" | result -> 0
+ * @feat - indexOf() | map()
+ */
+
+========================================
+
+/**
+ * @subject #2 (bin-inverse) - Le but est de retourner tous les bits d'un nombre. N'inversez pas les zéros non significatifs.
+ * @exemple -  n = 9, en binaire 1001, si on inverse tout les bits on obtient 0110 | result -> 6 (en decimal)
+ * @feat - toString() | join() | parseInt() | map()
+ */
+
+========================================
+
+/**
+ * @subject #3 (dentist) - On vous donne un patient, chaque patient a un nombre unique de dents. Chaque dent est doit saine 1, porri 0 ou tirE -, retirez toutes les dents pourries que vous trouvez
+ * @exemple
+ * input:
+ ----01---1----0
+ ----0111-00---0
+ * output:
+ -----1---1-----
+ -----111-------
+ * @feat - replaceAll() | map() | forEach()
+ */
+
+=========================================
+
+/**
+ * @subject #4 (flight) - Un vol devait arriver a une heure particuliere et on estime maintenant qu'il arrivera a une autre heure. Ecrire une fonction qui revoie le statut du vol: "EARLY", "DELAYED" ou "ON TIME"
+ * @exemple - t = "22:13:55", t2 = "22:12:23" | result -> "EARLY"
+ * @feat - split() | join()
+ */

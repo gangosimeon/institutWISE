@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/nb.css">
+  <title>Le monde en noir &amp; blanc</title>
+</head>
+<body>
+  <header id="mainHeader">
+    <img src="/images/2.png" alt="logo du site" id="logoSite">
+    <h1>Mon site</h1>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html" title="La page d'accueil de notre site">Accueil</a></li>
+        <li><a href="galeries.html" title="La page de galeries de notre site">Galerie</a></li>
+        <li><a href="contact.html" vtitle="La page de contact de notre site">Contact</a></li>
+        <li><a href="about.html" title="La page a propos de notre site">A propos</a></li>
+        <li><a href="blog.html" title="La page blog de notre site">Blog</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle" src="images/1f83ae2d5a3e0173d19983a03bda22.jpg" alt="Ouvrir / Fermer le menu"></button>
+  </header>
+  <main id="pageContent">
+    <h1>Contactez nous</h1>
+    <p>Merci de bien vouloir completer ce formulaire</p>
+    
+    <form id="formContact" action="merci.html" method="">
+      <div>
+        <div>
+          <label for="fName">Prenom</label>
+          <input type="text" name="fName"  id="fName" required autofocus>
+        </div>
+        <div>
+          <label for="lName">Nom de famille</label>
+          <input type="text" name="lName"  id="lName" required>
+        </div>
+        <div>
+          <label for="email">Votre e-mail</label>
+          <input type="email" name="email"  id="email" required>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+      </div>
+      <button type="submit">Envoyer</button>
+       <!-- <input type="submit" value="Envoyer"> -->
+    </form>
+  </main>
+  <footer id="mainFooter">
+    <p>&copy; Copyright Gango Siméon - 2024</p>
+  </footer>
+</body>
+</html>

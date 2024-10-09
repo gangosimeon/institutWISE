@@ -1,0 +1,134 @@
+body{
+  /*Le contenu occupe toute la page du navigateur*/
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family:harryp ;
+  background-image: url(/assets/images/poudlard-bg.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Au niveau du navbar*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: sticky;
+}
+ul li {
+  display: inline;
+  padding:  10px;
+  font-size:20px;
+}
+ul li a{
+  margin-right: 10px;
+}
+/*Message de bienvenu section*/
+#welcomeContent{
+  text-align: center;
+  margin: 100px 30px 30px 30px;
+  padding: 30px;
+  background-color: rgba(63, 63, 73, 0.4);
+  color: white;
+  font-size:25px;
+  border:2px solid white;
+  box-shadow:4px 2px rgba(248, 248, 249, 0.8);
+  border-radius: 7%;
+}
+/*Mettre les titres des sections au meme niveau que welcomeContent */
+section h1{
+  margin-left: 30px;
+  font-size:30px;
+}
+/*Mettre les liens du navbar et du footer en blanc et enlever le underline*/
+ul li a, footer a, nav a{
+  text-decoration: none;
+  color: white;
+}
+nav a{
+  font-weight: bold;
+}
+a:hover{
+  color: #b2aef4;
+}
+/*Contenu de la page principal pour les CARDS*/
+div a img{
+  width: 250px;
+  height: 200px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+} 
+.card a,div a{
+  /*Styles css sur les liens contenu dans les balises de class card */
+  text-decoration: none;
+  color: white;
+  float:right;
+}
+.cardContent, .personnageContent,.magieContent,.herbologiesContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.card{
+  border:2px solid #5e58c6;
+  margin: 20px;
+  width: 250px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 12px;
+  color:  rgb(129, 129, 240);
+  background-color: aliceblue;
+  transition: transform .2s; /*Zooommm*/
+  font-size: 20px;
+
+}
+.card   a{
+  color:  rgb(129, 129, 240);
+}
+.card:hover{
+  border:2px solid #5e58c6;
+  margin: 20px;
+  width: 250px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 12px;
+  color:  rgb(129, 129, 240);
+  background-color: aliceblue;
+  box-shadow: 5px 5px rgba(129, 129, 240,0.4);
+  transform: scale(1.2);/*Zooommm*/
+}
+
+/*Couleur de l'en-tete et du pied de page*/
+header,footer{
+  background-color:#5e58c6;
+}
+/*Au niveau du footer*/
+footer{
+  color: white;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 1px 0;
+  margin-top: 20px;
+  /* position: sticky; */
+}
+
+/*Import et utilisation la police "harryp" pour l'ensemble de la page grâce à `@font-face`. */
+
+@font-face {
+  font-family:harryp ;/*Nom a utiliser sur le web*/
+  src: url(/assets/fonts/harryp.ttf);
+}
+
+/*Pour s'adapter au telephone mobile*/
+@media  only screen and (max-width :768px){
+  nav a{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
