@@ -1,9 +1,15 @@
 # Wise Institut Classroom - Harry Potter Website 🎓
 
-Ce document est un template de README destiné à accompagner les exercices ou les challenges techniques, il permet de décrire de manière claire et concise le contexte et les objectifs du défi, ainsi que les compétences et les technologies utilisées pour le relever. Il est important de souligner que l'ensemble du projet devra être archivé sur un référentiel GitHub. Cela mettra en valeur vos compétences et vous aidera à constituer un portfolio bien fourni de projets.
-
-> Veuillez remplacer cette section par une description du projet dans son ensemble, en tenant compte du contexte demandé.
-
+Ce projet consiste à créer un site web consacré à l'univers de Harry Potter. L'objectif est de créer un site attractive pour les fans de l'univers de Harry Potter tout en respectant les principes de conception web moderne.
+Notre site doit contenir:
+-Barre de navigation: Une barre de navigation bien visible avec un grand titre et des sections correspondant aux principaux thèmes du site (personnages, magies, herbologies).
+-Message de bienvenue: Introduction engageante sur Harry Potter, l'œuvre de J.K. Rowling et son impact.
+-Thèmes principaux:
+    .Personnages : Un focus sur les trois protagonistes principaux.
+    .Magies : Une explication des trois types de magie courants dans l'univers.
+    .Herbologies : Description des trois plantes magiques importantes.
+    Ces trois éléments doivent être présenter sous forme de cartes avec une animation au survol.
+-Pied de page: Inclut une description du site, les droits d'auteur et un lien vers mon GitHub .
 ---
 
 ## 📌 Table des matières
@@ -19,8 +25,6 @@ Ce document est un template de README destiné à accompagner les exercices ou l
   - [Ressources utiles](#ressources-utiles)
 - [Auteur](#auteur)
 - [Remerciements](#remerciements)
-
-> Modifiez cette note si besoin et mettez à jour la table des matières en fonction des sections que vous conservez.
 
 ---
 
@@ -78,6 +82,56 @@ Ce document est un template de README destiné à accompagner les exercices ou l
 ---
 
 ## 📌 Mon processus
+-Préparer un éditeur de texte
+  .Visual Studio Code
+-Créer un fichier HTML
+  .index.html
+Structure de page HTML utilisée
+```
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>HARRY POTTER</title>
+		<link rel="icon" href="/assets/icons/favicon.ico"/>
+		<meta name="description" content="L'univers magique de Harry Potter">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/styles/index.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar" id="navbar">
+			</nav>
+		</header>
+		<main id="mainSection">
+			<section id="welcome">
+
+			</section>
+			<section id="cards">
+
+			</section>
+			<section id="personnages">
+				
+			</section>
+			<section id="magie">
+				
+			</section>
+			<section id="herbologies">
+				
+			</section>
+			<footer>
+				
+			</footer>
+		</main>
+	</body>
+</html>
+```
+
+-Ajouter du contenu
+![html](https://github.com/user-attachments/assets/952d1099-20d1-47a0-a88c-46f80c478efa)
+-Ajouter du css pour organiser et rendre ma page agréable à la vue
+![css](https://github.com/user-attachments/assets/175df1b0-5399-4222-a882-f17f7b8d86e0)
 
 ### ⚫ Construit avec
 
@@ -96,13 +150,10 @@ Ce document est un template de README destiné à accompagner les exercices ou l
 
 ### ⚫ Ce que j'ai appris
 
-Utilisez cette section pour récapituler certaines de vos principales leçons apprises en travaillant sur ce projet. Rédiger ces informations et fournir des exemples de code pour les aspects que vous souhaitez mettre en avant est un excellent moyen de renforcer vos connaissances.
+J'ai appris importer et utiliser la police "harryp" pour l'ensemble de la page grâce à `@font-face`.
+J'ai également appris à utiliser les flexbox:
 
-Voici comment ajouter des extraits de code:
-
-```html
-<h1>Un peu de code HTML dont je suis fier</h1>
-```
+Voici des extraits de code:
 
 ```css
 .navbar{
@@ -112,7 +163,7 @@ Voici comment ajouter des extraits de code:
   padding: 0px;
 }
 
-*Import et utilisation la police "harryp" pour l'ensemble de la page grâce à `@font-face`. */
+
 
 @font-face {
   font-family:harryp ;/*Nom a utiliser sur le web*/
@@ -120,11 +171,6 @@ Voici comment ajouter des extraits de code:
 }
 ```
 
-```js
-
-```
-
-> Supprimez cette note et le contenu de cette section et remplacez-le par vos propres apprentissages en ajoutant des petits commentaires expliquant les aspects que vous avez appris.
 
 ### ⚫ Développement continu
 
@@ -134,10 +180,8 @@ Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez co
 
 ### ⚫ Ressources utiles
 
-- [Exemple de ressource 1](https://www.example.com) - Cela m'a aidé pour XYZ. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
-- [Exemple de ressource 2](https://www.example.com) - Cet article est incroyable et m'a aidé à enfin comprendre XYZ. Je le recommande à tous ceux qui apprennent encore ce concept.
-
-> Supprimez cette note et remplacez la liste ci-dessus par les ressources qui vous ont aidé durant le défi. Elles pourraient être utiles pour quiconque consulte votre solution ou pour vous-même lorsque vous reviendrez sur ce projet dans le futur.
+- [w3school](https://www.w3schools.com/) - Cela m'a aidé à voir plus clairement les effets des attributs CSS. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
+- [flexboxfroggy][(https://flexboxfroggy.com/#fr) - Cet article est incroyable et m'a aidé à enfin comprendre les floxbox. Je le recommande à tous ceux qui apprennent encore ce concept.
 
 ---
 
