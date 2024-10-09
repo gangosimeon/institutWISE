@@ -69,6 +69,7 @@ Ce document est un template de README destiné à accompagner les exercices ou l
 ### ⚫ Capture d'écran
 
 `[capture d'écran ici ...]`
+![monSiteHarryPotter](https://github.com/user-attachments/assets/391a461a-af46-4430-ae15-dc9d5eab63d1)
 
 Ajoutez une capture d'écran de votre solution. Vous pouvez utiliser un extension comme [FireShot](https://getfireshot.com/) pour prendre la capture d'écran. FireShot propose une option gratuite, donc vous n'avez pas besoin de l'acheter.
 
