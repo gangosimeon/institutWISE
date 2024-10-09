@@ -1,4 +1,4 @@
-# Wise Institut Classroom - Harry Potter Website 🎓
+## Wise Institut Classroom - Harry Potter Website 🎓
 
 Ce projet consiste à créer un site web consacré à l'univers de Harry Potter. L'objectif est de créer un site attractive pour les fans de l'univers de Harry Potter tout en respectant les principes de conception web moderne.
 Notre site doit contenir:
@@ -10,7 +10,7 @@ Notre site doit contenir:
     .Herbologies : Description des trois plantes magiques importantes.
     Ces trois éléments doivent être présenter sous forme de cartes avec une animation au survol.
 -Pied de page: Inclut une description du site, les droits d'auteur et un lien vers mon GitHub .
----
+
 
 ## 📌 Table des matières
 
