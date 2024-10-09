@@ -77,7 +77,7 @@ Notre site doit contenir:
 
 ### ⚫ Liens
 
-- URL Github de la solution: https://github.com/gangosimeon/institutWISE/tree/main/frontend/harry-potter-boilerplate
+- URL Github de la solution:[Solution]( https://github.com/gangosimeon/institutWISE/tree/main/frontend/harry-potter-boilerplate)
 
 ---
 
@@ -181,7 +181,7 @@ Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez co
 ### ⚫ Ressources utiles
 
 - [w3school](https://www.w3schools.com/) - Cela m'a aidé à voir plus clairement les effets des attributs CSS. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
-- [flexboxfroggy][(https://flexboxfroggy.com/#fr) - Cet article est incroyable et m'a aidé à enfin comprendre les floxbox. Je le recommande à tous ceux qui apprennent encore ce concept.
+- [flexboxfroggy](https://flexboxfroggy.com/#fr) - Cet article est incroyable et m'a aidé à enfin comprendre les floxbox. Je le recommande à tous ceux qui apprennent encore ce concept.
 
 ---
 
