@@ -174,9 +174,7 @@ Voici des extraits de code:
 
 ### ⚫ Développement continu
 
-Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez continuer à vous concentrer dans vos projets futurs. Il peut s'agir de concepts que vous ne maîtrisez pas encore totalement ou de techniques que vous avez trouvées utiles et que vous souhaitez affiner et perfectionner.
-
-> Supprimez cette note et le contenu de cette section et remplacez-le par vos propres plans de développement continu.
+Dans mes projets futurs, je souhaite continuer à me concentrer sur plusieurs concepts clés du développement Web fullstack que je n’ai pas encore totalement maîtrisés. Cela inclut le perfectionnement de mes compétences en JavaScript, notamment la maîtrise des frameworks comme React et Node.js. J’aimerais approfondir ma compréhension des architectures RESTful et GraphQL, ainsi que des méthodologies DevOps pour une gestion plus efficace du déploiement et de la maintenance d’applications Web. Par ailleurs, je veux affiner mes connaissances sur la sécurité des applications Web, les tests automatisés, et l’optimisation des performances front-end et back-end pour fournir des solutions à la fois robustes et évolutives.
 
 ### ⚫ Ressources utiles
 
@@ -194,5 +192,5 @@ Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez co
 
 ## 📌 Remerciements
 
-C'est ici que vous pouvez remercier toutes les personnes qui vous ont aidé sur ce projet. Peut-être avez-vous travaillé en équipe ou vous êtes-vous inspiré de la solution de quelqu'un d'autre.
+Je tiens à remercier l'institut WISE et ses formateurs pour leur soutien et leur engagement à m'aider dans mon parcours pour devenir développeur Web fullstack.
 
