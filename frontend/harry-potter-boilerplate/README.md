@@ -71,14 +71,9 @@ Ce document est un template de README destiné à accompagner les exercices ou l
 `[capture d'écran ici ...]`
 ![monSiteHarryPotter](https://github.com/user-attachments/assets/391a461a-af46-4430-ae15-dc9d5eab63d1)
 
-Ajoutez une capture d'écran de votre solution. Vous pouvez utiliser un extension comme [FireShot](https://getfireshot.com/) pour prendre la capture d'écran. FireShot propose une option gratuite, donc vous n'avez pas besoin de l'acheter.
-
-> Supprimez cette note et les paragraphes ci-dessus lorsque vous ajoutez votre capture d'écran.
-
 ### ⚫ Liens
 
-- URL Github de la solution: [Ajoutez l'URL de votre solution ici](https://your-solution-url.com)
-- URL du site en ligne (facultatif): (https://github.com/gangosimeon/institutWISE/tree/main/frontend/harry-potter-boilerplate)
+- URL Github de la solution: https://github.com/gangosimeon/institutWISE/tree/main/frontend/harry-potter-boilerplate
 
 ---
 
@@ -110,15 +105,23 @@ Voici comment ajouter des extraits de code:
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+*Import et utilisation la police "harryp" pour l'ensemble de la page grâce à `@font-face`. */
+
+@font-face {
+  font-family:harryp ;/*Nom a utiliser sur le web*/
+  src: url(/assets/fonts/harryp.ttf);
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
 ```
 
 > Supprimez cette note et le contenu de cette section et remplacez-le par vos propres apprentissages en ajoutant des petits commentaires expliquant les aspects que vous avez appris.
@@ -141,7 +144,7 @@ Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez co
 ## 📌 Auteur
 
 - Site Web - [Ajoutez votre portfolio ici si vous en avez un](https://www.votre-site.com)
-- Github - [@nomutilisateur](https://github.com/nomutilisateur)
+- Github - [@gangosimeon](https://github.com/gangosimeon)
 
 ---
 
@@ -149,4 +152,3 @@ Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez co
 
 C'est ici que vous pouvez remercier toutes les personnes qui vous ont aidé sur ce projet. Peut-être avez-vous travaillé en équipe ou vous êtes-vous inspiré de la solution de quelqu'un d'autre.
 
-> Si vous avez réalisé ce défi seul, vous pouvez supprimer entièrement cette section.
