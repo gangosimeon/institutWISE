@@ -82,11 +82,11 @@ Notre site doit contenir:
 ---
 
 ## 📌 Mon processus
--Préparer un éditeur de texte
+- Préparer un éditeur de texte
   .Visual Studio Code
--Créer un fichier HTML
+- Créer un fichier HTML
   .index.html
-Structure de page HTML utilisée
+- Structure de page HTML utilisée
 ```
 <!DOCTYPE html>
 <html lang="fr">
@@ -128,9 +128,9 @@ Structure de page HTML utilisée
 </html>
 ```
 
--Ajouter du contenu
+- Ajouter du contenu
 ![html](https://github.com/user-attachments/assets/952d1099-20d1-47a0-a88c-46f80c478efa)
--Ajouter du css pour organiser et rendre ma page agréable à la vue
+- Ajouter du css pour organiser et rendre ma page agréable à la vue
 ![css](https://github.com/user-attachments/assets/175df1b0-5399-4222-a882-f17f7b8d86e0)
 
 ### ⚫ Construit avec
