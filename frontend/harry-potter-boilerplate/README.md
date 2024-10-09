@@ -78,7 +78,7 @@ Ajoutez une capture d'écran de votre solution. Vous pouvez utiliser un extensio
 ### ⚫ Liens
 
 - URL Github de la solution: [Ajoutez l'URL de votre solution ici](https://your-solution-url.com)
-- URL du site en ligne (facultatif): [Ajoutez l'URL du site en ligne ici](https://your-live-site-url.com)
+- URL du site en ligne (facultatif): (https://github.com/gangosimeon/institutWISE/tree/main/frontend/harry-potter-boilerplate)
 
 ---
 
