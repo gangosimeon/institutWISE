@@ -2,14 +2,14 @@
 
 Ce projet consiste à créer un site web consacré à l'univers de Harry Potter. L'objectif est de créer un site attractive pour les fans de l'univers de Harry Potter tout en respectant les principes de conception web moderne.
 Notre site doit contenir:
--Barre de navigation: Une barre de navigation bien visible avec un grand titre et des sections correspondant aux principaux thèmes du site (personnages, magies, herbologies).
--Message de bienvenue: Introduction engageante sur Harry Potter, l'œuvre de J.K. Rowling et son impact.
--Thèmes principaux:
-    -Personnages : Un focus sur les trois protagonistes principaux.
-    -Magies : Une explication des trois types de magie courants dans l'univers.
-    -Herbologies : Description des trois plantes magiques importantes.
+- Barre de navigation: Une barre de navigation bien visible avec un grand titre et des sections correspondant aux principaux thèmes du site (personnages, magies, herbologies).
+-  Message de bienvenue: Introduction engageante sur Harry Potter, l'œuvre de J.K. Rowling et son impact.
+-  Thèmes principaux:
+    - [ ] `Personnages` : Un focus sur les trois protagonistes principaux.
+    - [ ] `Magies` : Une explication des trois types de magie courants dans l'univers.
+   - [ ] `Herbologies` : Description des trois plantes magiques importantes.
     Ces trois éléments doivent être présenter sous forme de cartes avec une animation au survol.
--Pied de page: Inclut une description du site, les droits d'auteur et un lien vers mon GitHub .
+-  Pied de page: Inclut une description du site, les droits d'auteur et un lien vers mon GitHub .
 
 
 ## 📌 Table des matières
@@ -82,11 +82,11 @@ Notre site doit contenir:
 ---
 
 ## 📌 Mon processus
--Préparer un éditeur de texte
-  .Visual Studio Code
--Créer un fichier HTML
-  .index.html
-Structure de page HTML utilisée
+- Préparer un éditeur de texte
+  - Visual Studio Code
+- Créer un fichier HTML
+  - index.html
+- Structure de page HTML utilisée
 ```
 <!DOCTYPE html>
 <html lang="fr">
@@ -128,9 +128,9 @@ Structure de page HTML utilisée
 </html>
 ```
 
--Ajouter du contenu
+- Ajouter du contenu
 ![html](https://github.com/user-attachments/assets/952d1099-20d1-47a0-a88c-46f80c478efa)
--Ajouter du css pour organiser et rendre ma page agréable à la vue
+- Ajouter du css pour organiser et rendre ma page agréable à la vue
 ![css](https://github.com/user-attachments/assets/175df1b0-5399-4222-a882-f17f7b8d86e0)
 
 ### ⚫ Construit avec
@@ -138,15 +138,6 @@ Structure de page HTML utilisée
 - Balises HTML5 sémantiques
 - Propriétés personnalisées CSS
 - Flexbox + Media queries
-- [React](https://reactjs.org/) - Librairie JavaScript
-- [Material-UI](https://mui.com/) - Composants UI personnalisés
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS le plus populaire
-- [Sass](https://sass-lang.com/) - Préprocesseur CSS
-- [Redux](https://redux.js.org/) - Gestionnaire d'état
-- [TypeScript](https://www.typescriptlang.org/) - Type checker
-  ...
-
-> Ce ne sont que des exemples. Supprimez cette note et remplacez la liste ci-dessus par vos propres choix.
 
 ### ⚫ Ce que j'ai appris
 
