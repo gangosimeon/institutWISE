@@ -4,7 +4,7 @@ body{
   padding: 0;
   color: white;
   font-family:harryp ;
-  background-image: url(/assets/images/poudlard-bg.jpeg);/*Pour definir l'image de fond*/
+  background-image: url(/assets/images/poudlard-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -60,7 +60,6 @@ div a img{
   border-top-right-radius: 5%;
 } 
 .card a,div a{
-  /*Styles css sur les liens contenu dans les balises de class card */
   text-decoration: none;
   color: white;
   float:right;
@@ -68,7 +67,7 @@ div a img{
 .cardContent, .personnageContent,.magieContent,.herbologiesContent{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;/*Justify-content permet de centrer les elements cards */
+  justify-content: center;
 }
 
 .card{
@@ -80,7 +79,7 @@ div a img{
   border-radius: 12px;
   color:  rgb(129, 129, 240);
   background-color: aliceblue;
-  transition: transform .2s; /*Zooommm*/
+  transition: transform .2s; 
   font-size: 20px;
 }
 .card   a{
@@ -96,7 +95,7 @@ div a img{
   color:  rgb(129, 129, 240);
   background-color: aliceblue;
   box-shadow: 5px 5px rgba(129, 129, 240,0.4);
-  transform: scale(1.2);/*Zooommm*/
+  transform: scale(1.2);
 }
 
 /*Couleur de l'en-tete et du pied de page*/
