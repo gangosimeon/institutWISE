@@ -36,19 +36,16 @@
     justify-content: center;
     align-items: center;
     color: white;
-    
+    &:hover {
+      background-color: rgb(99, 134, 181);
+      cursor: pointer;
+    }
   }
-  .div20:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(99, 134, 181);
-    color: white;
-    cursor: pointer;
-  }
+
   .div20,.bg ,.display{
     border-radius: 5px;
   }
+  
   button {
     border: none;
   }
@@ -58,14 +55,10 @@
     align-items: center;
     background-color: gray;
     color: white;
-  }
-.bg:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(99, 134, 181);
-    color: white;
-    cursor: pointer;
+    &:hover {
+      background-color: rgb(99, 134, 181);
+      cursor: pointer;
+    }
   }
   .display {
     border: 1px solid gray;

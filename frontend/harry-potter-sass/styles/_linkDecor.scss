@@ -1,0 +1,7 @@
+@mixin linkDecoration($color) {
+  color: $color;
+  text-decoration: none;
+  &:hover{
+    color: #b2aef4;
+  }
+}

@@ -1,5 +1,5 @@
 @import "color.scss";
-
+@import "linkDecor";
 body{
   /*Le contenu occupe toute la page du navigateur*/
   margin: 0;
@@ -17,15 +17,22 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: $white;
+    font-weight: bold;
+    &:hover{
+      color: #b2aef4;
+    }
+  }
+  li {
+    display: inline;
+    padding:  10px;
+    font-size:20px;
+  }
 }
-ul li {
-  display: inline;
-  padding:  10px;
-  font-size:20px;
-}
-ul li a{
-  margin-right: 10px;
-}
+
 /*Message de bienvenu section*/
 #welcomeContent{
   text-align: center;
@@ -37,22 +44,15 @@ ul li a{
   border:2px solid $white;
   box-shadow:4px 2px rgba(248, 248, 249, 0.8);
   border-radius: 7%;
+  a{
+    @include linkDecoration($white);
+    float: right;
+  }
 }
 /*Mettre les titres des sections au meme niveau que welcomeContent */
 section h1{
   margin-left: 30px;
   font-size:30px;
-}
-/*Mettre les liens du navbar et du footer en blanc et enlever le underline*/
-ul li a, footer a, nav a{
-  text-decoration: none;
-  color: $white;
-  &:hover{
-    color: #b2aef4;
-  }
-}
-nav a{
-  font-weight: bold;
 }
 
 /*Contenu de la page principal pour les CARDS*/
@@ -62,11 +62,7 @@ div a img{
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 } 
-.card a,div a{
-  text-decoration: none;
-  color: $white;
-  float:right;
-}
+
 .cardContent, .personnageContent,.magieContent,.herbologiesContent{
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +82,7 @@ div a img{
   padding: 2px;
   text-align: center;
   border-radius: 12px;
-  color: $textColor;
+  color: $violet;
   background-color:$bgColor;
   transition: transform .2s; 
   font-size: 20px;
@@ -95,12 +91,20 @@ div a img{
   &:hover{
     transform: scale(1.2);
   }
+
   a{
-    color: $textColor;
+    float: right;
+    margin-right: 10px;
+    @include linkDecoration($violet);
   }
+ 
 }
 
-
+.cardContent{
+  a{
+   @include linkDecoration($violet);
+  }
+}
 /*Couleur de l'en-tete et du pied de page*/
 header,footer{
   background-color:$violet;
@@ -113,6 +117,9 @@ footer{
   text-align: center;
   padding: 1px 0;
   margin-top: 20px;
+  a{
+    @include linkDecoration($white);
+  }
 }
 
 /*Import et utilisation la police "harryp" pour l'ensemble de la page grâce à `@font-face`. */
