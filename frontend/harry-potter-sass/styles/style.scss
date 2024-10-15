@@ -47,13 +47,14 @@ section h1{
 ul li a, footer a, nav a{
   text-decoration: none;
   color: $white;
+  &:hover{
+    color: #b2aef4;
+  }
 }
 nav a{
   font-weight: bold;
 }
-a:hover{
-  color: #b2aef4;
-}
+
 /*Contenu de la page principal pour les CARDS*/
 div a img{
   width: 250px;
@@ -72,6 +73,12 @@ div a img{
   justify-content: center;
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
 .card{
   border:2px solid $violet;
   margin: 20px;
@@ -80,25 +87,19 @@ div a img{
   text-align: center;
   border-radius: 12px;
   color: $textColor;
-  background-color: aliceblue;
+  background-color:$bgColor;
   transition: transform .2s; 
   font-size: 20px;
+  @include border-radius(12px);
+  box-shadow: 5px 5px rgba(129, 129, 240,0.4);
+  &:hover{
+    transform: scale(1.2);
+  }
   a{
     color: $textColor;
   }
 }
-.card:hover{
-  border:2px solid $violet;
-  margin: 20px;
-  width: 250px;
-  padding: 2px;
-  text-align: center;
-  border-radius: 12px;
-  color: $textColor;
-  background-color: aliceblue;
-  box-shadow: 5px 5px rgba(129, 129, 240,0.4);
-  transform: scale(1.2);
-}
+
 
 /*Couleur de l'en-tete et du pied de page*/
 header,footer{
