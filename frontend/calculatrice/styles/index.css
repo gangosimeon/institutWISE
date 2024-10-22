@@ -88,18 +88,13 @@
 .div20 {
   grid-area: 5/4/6/5;
   display: flex;
-  background-color: rgb(39, 85, 146);
+  background-color: rgb(99, 134, 181);
   justify-content: center;
   align-items: center;
   color: white;
 }
-
 .div20:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(99, 134, 181);
-  color: white;
   cursor: pointer;
 }
 
@@ -118,19 +113,14 @@ button {
   background-color: gray;
   color: white;
 }
-
 .bg:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(99, 134, 181);
-  color: white;
   cursor: pointer;
 }
 
 .display {
   border: 1px solid gray;
-  height: 50px;
+  height: 90px;
   width: 300px;
   text-align: end;
   font-size: 30px;

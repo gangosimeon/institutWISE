@@ -16,6 +16,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .navbar a {
   margin-right: 10px;
@@ -139,26 +141,50 @@ footer a:hover {
   src: url(/assets/fonts/harryp.ttf);
 }
 /*Pour s'adapter au telephone mobile*/
-@media only screen and (max-width: 768px) {
-  body {
-    min-width: 400px;
-  }
+@media only screen and (max-width: 400px) {
   .navbar {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  header, footer {
-    background-color: rgba(35, 34, 34, 0.5411764706);
+  .menus {
+    display: block;
   }
-  ul li {
+  ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .menus {
+    top: 55px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(35, 34, 34, 0.5411764706);
+    backdrop-filter: blur(7px);
+    transition: 10ms;
+    margin-top: -100%;
+  }
+  header, footer {
+    background-color: rgba(35, 34, 34, 0.5411764706);
+  }
+}
+/*Pour s'adapter au telephone mobile*/
+.active {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .iconMenu {
+    display: none;
+    margin-left: 2%;
   }
 }
 
