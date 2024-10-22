@@ -1,16 +1,17 @@
 @import "color";
+
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 3px;
   grid-row-gap: 3px;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   padding: 10px;
  
-  }
-  
+}
+
   .div1 { grid-area: 4 / 1 / 5 / 2;  }
   .div2 { grid-area: 4 / 2 / 5 / 3; }
   .div3 { grid-area: 4 / 3 / 5 / 4; }
@@ -33,10 +34,12 @@
   .div20 { 
     grid-area: 5 / 4 / 6 / 5;
     display: flex;
-    background-color:$bgColorHover;
+    background-color:rgb(31, 31, 116);
     justify-content: center;
     align-items: center;
     color: white;
+    font-weight: bold;
+    font-size: 20px;
     &:hover {
       background-color: rgb(99, 134, 181);
       cursor: pointer;
@@ -54,29 +57,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    color: white;
+    background-color:white;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
     &:hover {
-      background-color: rgb(99, 134, 181);
+      background-color: rgb(140, 165, 196);
       cursor: pointer;
     }
   }
   .display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
     border: 1px solid gray;
-    height: 90px;
-    width: 500px;
+    height: 80px;
+    width: 378px;
+    padding: 10px;
     text-align: end;
-    font-size: 30px; 
+    font-size: 30px;
+    overflow: hidden
+
   }
 
   .mainContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:rgb(224, 223, 223);
     align-items: center;
-    height: 200px;
-    width: 500px;
-    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    border: 1px solid rgb(214, 214, 214);
     padding: 10px;
   }
 
@@ -84,5 +97,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 5%;
   }

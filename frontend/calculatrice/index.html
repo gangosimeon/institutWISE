@@ -4,37 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>calculatrice</title>
-  <link rel="stylesheet" href="/styles/index.css">
-  <script src="./js/soustraction.js" defer></script>
-  <script src="./js/multiplication.js" defer></script>
-  <script src="./js/addition.js" defer></script>
+  <link rel="stylesheet" href="styles/index.css">
   <script src="./js/script.js" defer></script>
 </head>
 <body>
   <div class="mainContent">
     <div class="display" id="display"></div>
     <div class="parent">
-      <div class="div1 bg" id="1">1</div>
-      <div class="div2 bg" id="2">2</div>
-      <div class="div3 bg" id="3">3</div>
-      <div class="div4 bg" id="4">4</div>
-      <div class="div5 bg" id="5">5</div>
-      <div class="div6 bg" id="6">6</div>
-      <div class="div7 bg" id="7">7</div>
-      <div class="div8 bg" id="8">8</div>
-      <div class="div9 bg" id="9">9</div>
-      <div class="div10 bg" id="10">+/-</div>
-      <div class="div11 bg" id="11">0</div>
-      <div class="div12 bg" id="12">.</div>
-      <div class="div13 bg" id="ce">CE</div>
-      <div class="div14 bg" id="c">C</div>
-      <div class="div15 bg" id="sup">SUP</div>
-      <div class="div16 bg" id="division">/</div>
-      <div class="div17 bg" id="multiplication">X</div>
-      <div class="div18 bg" id="soustraction">-</div>
-      <div class="div19 bg" id="addition">+</div>
-      <div class="div20"  id="egal">=</div>
-      </div>
+      <button class="div1 bg" onclick="operationEffect('1')">1</button>
+      <button class="div2 bg" onclick="operationEffect('2')">2</button>
+      <button class="div3 bg" onclick="operationEffect('3')">3</button>
+      <button class="div4 bg" onclick="operationEffect('4')">4</button>
+      <button class="div5 bg" onclick="operationEffect('5')">5</button>
+      <button class="div6 bg" onclick="operationEffect('6')">6</button>
+      <button class="div7 bg" onclick="operationEffect('7')">7</button>
+      <button class="div8 bg" onclick="operationEffect('8')">8</button>
+      <button class="div9 bg" onclick="operationEffect('9')">9</button>
+      <button class="div10 bg" onclick="operationEffect('+/-')">+/-</button>
+      <button class="div11 bg" onclick="operationEffect('0')">0</button>
+      <button class="div12 bg" onclick="operationEffect('')">.</button>
+      <button class="div13 bg" onclick="effacer()">CE</button>
+      <button class="div14 bg"  onclick="effacer()">C</button>
+      <button class="div15 bg" onclick="effacer()">SUP</button>
+      <button class="div16 bg" onclick="operationEffect('/')">/</button>
+      <button class="div17 bg" onclick="operationEffect('*')">X</button>
+      <button class="div18 bg" onclick="operationEffect('-')">-</button>
+      <button class="div19 bg" onclick="operationEffect('+')">+</button>
+      <button class="div20" onclick="calculer()">=</button>
+    </div>
   </div>
 </body>
 </html>

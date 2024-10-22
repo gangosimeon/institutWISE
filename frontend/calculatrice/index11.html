@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculatrice</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <div class="mainContent">
+    <div class="display" id="display"></div>
+    <div class="parent">
+      <div class="div1 bg" onclick="operationEffect('1')" id="1">1</div>
+      <div class="div2 bg" id="2" onclick="operationEffect('2')">2</div>
+      <div class="div3 bg" id="3" onclick="operationEffect('3')">3</div>
+      <div class="div4 bg" id="4"  onclick="operationEffect('4')">4</div>
+      <div class="div5 bg" id="5" onclick="operationEffect('5')">5</div>
+      <div class="div6 bg" id="6" onclick="operationEffect('6')">6</div>
+      <div class="div7 bg" id="7" onclick="operationEffect('7')">7</div>
+      <div class="div8 bg" id="8" onclick="operationEffect('8')">8</div>
+      <div class="div9 bg" id="9" onclick="operationEffect('9')">9</div>
+      <div class="div10 bg" id="10" onclick="operationEffect('+/-')">+/-</div>
+      <div class="div11 bg" id="11" onclick="operationEffect('0')">0</div>
+      <div class="div12 bg" id="12" onclick="operationEffect('.')">.</div>
+      <div class="div13 bg" id="ce" onclick="effacer()">CE</div>
+      <div class="div14 bg" id="c" onclick="effacer()">C</div>
+      <div class="div15 bg" id="sup" onclick="effacer()">SUP</div>
+      <div class="div16 bg" id="division" onclick="operationEffect('/')">/</div>
+      <div class="div17 bg" id="multiplication" onclick="operationEffect('*')">X</div>
+      <div class="div18 bg" id="soustraction" onclick="operationEffect('-')">-</div>
+      <div class="div19 bg" id="addition" onclick="operationEffect('+')">+</div>
+      <div class="div20"  id="egal" onclick="calculer()">=</div>
+      </div>
+  </div>
+</body>
+</html>
