@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './essai/person.css';
-import Person from './essai/Person';
+import Person from './Person';                                                                        
   function App() {
     const Greeting = ({ name }) => {
       return <h1>Hello, {name}!</h1>;
