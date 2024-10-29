@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 {
+  text-align: center;
+}
+
+button {
+  display: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: #13316d;
+  border: 1px solid rgb(31, 25, 107);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+}
+.increment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: #13316d;
+  border: 1px solid rgb(31, 25, 107);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+}

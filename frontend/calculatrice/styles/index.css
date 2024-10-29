@@ -122,10 +122,11 @@ button {
   cursor: pointer;
 }
 
-.display {
+.screem {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
   background-color: white;
   border: 1px solid gray;
   height: 80px;
@@ -134,6 +135,15 @@ button {
   text-align: end;
   font-size: 30px;
   overflow: hidden;
+}
+.screem .display {
+  width: 378px;
+  height: 65%;
+}
+.screem .operation {
+  width: 378px;
+  height: 30%;
+  font-size: 15px;
 }
 
 .mainContent {

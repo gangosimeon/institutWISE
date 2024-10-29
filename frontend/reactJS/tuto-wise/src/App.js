@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import './essai/person.css';
+import Person from './essai/Person';
+  function App() {
+    const Greeting = ({ name }) => {
+      return <h1>Hello, {name}!</h1>;
+  };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const name = "Siméon";
+  const [count, setCount] = useState(0);
+
+  function incrementValue() {
+    setCount(count + 1);
+  }
+  function decrementValue() {
+    setCount(count - 1);
+  }
+  return <>
+    <Greeting name={name} />
+    <div className="increment">
+      <button onClick={incrementValue}>Increment</button>
+      <button onClick={decrementValue}>Decrement</button>
     </div>
-  );
+    <div className="counter">
+      <p>{count}</p>
+    </div>
+    <Person />
+  </>
+
 }
 
 export default App;

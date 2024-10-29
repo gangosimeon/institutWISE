@@ -9,7 +9,11 @@
 </head>
 <body>
   <div class="mainContent">
-    <div class="display" id="display"></div>
+    <div class="screem">
+      <div id="operation" class="operation"></div>
+      <div class="display" id="display"></div>
+    </div>
+   
     <div class="parent">
       <button class="div1 bg" onclick="operationEffect('1')">1</button>
       <button class="div2 bg" onclick="operationEffect('2')">2</button>
@@ -22,10 +26,10 @@
       <button class="div9 bg" onclick="operationEffect('9')">9</button>
       <button class="div10 bg" onclick="operationEffect('+/-')">+/-</button>
       <button class="div11 bg" onclick="operationEffect('0')">0</button>
-      <button class="div12 bg" onclick="operationEffect('')">.</button>
-      <button class="div13 bg" onclick="effacer()">CE</button>
+      <button class="div12 bg" onclick="operationEffect('.')">.</button>
+      <button class="div13 bg" onclick="effacerCE()">CE</button>
       <button class="div14 bg"  onclick="effacer()">C</button>
-      <button class="div15 bg" onclick="effacer()">SUP</button>
+      <button class="div15 bg" onclick="sup()">SUP</button>
       <button class="div16 bg" onclick="operationEffect('/')">/</button>
       <button class="div17 bg" onclick="operationEffect('*')">X</button>
       <button class="div18 bg" onclick="operationEffect('-')">-</button>
