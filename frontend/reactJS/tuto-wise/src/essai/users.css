@@ -1,4 +1,4 @@
-.person { 
+.users { 
   text-align: center;
   background-color: rgb(38, 11, 84); 
   color:white;
@@ -16,4 +16,15 @@ th, td{
   border: 1px solid white;
   border-collapse: collapse;
   padding: 10px;
+}
+
+
+button{
+  color: rgb(255, 255, 255);
+  background-color: #13316d;
+  border: 1px solid rgb(31, 25, 107);
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px;
+  margin: 15px;
 }

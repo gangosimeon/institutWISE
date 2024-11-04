@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
 import React, { useState } from 'react';
 import './App.css';
-import './essai/person.css';
-import Person from './Person';                                                                        
+import './essai/users.css';
+import MyForm from './MyForm';                                                                        
+
+
   function App() {
     const Greeting = ({ name }) => {
       return <h1>Hello, {name}!</h1>;
@@ -26,9 +28,10 @@ import Person from './Person';
     <div className="counter">
       <p>{count}</p>
     </div>
-    <Person />
-  </>
+    <MyForm />
 
+    
+  </>
 }
 
 export default App;

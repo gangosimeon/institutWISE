@@ -1,0 +1,30 @@
+button{
+  color: rgb(255, 255, 255);
+  background-color: #13316d;
+  border: 1px solid rgb(31, 25, 107);
+  border-radius: 12px;
+  width: 98%;
+  padding: 10px;
+  margin: 10px;
+}
+
+form{
+  border: 2px solid rgb(21, 4, 115);
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.column{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
