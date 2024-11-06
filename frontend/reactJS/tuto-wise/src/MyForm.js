@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 import './essai/MyForm.css';
 
 function MyForm() {
   const [user, setUser] = useState({});
+  
   const [users, setUsers] = useState(
     [
       {nom:"Ahmed", prenom:"Guido", age:20, ville:"Koumassi"},
@@ -26,55 +27,59 @@ function MyForm() {
   
 let userElements = users.map((user, index) =>{
   console.log(index, user)
-  return  <>
-  <tr key={user.nom}>
-    <td>{index}</td>
-    <td>{user.nom}</td>
-    <td>{user.prenom}</td>
-    <td>{user.age}</td>
-    <td>{user.ville}</td>
-  </tr>
-</>
+  return <>
+    <tr key={index}>
+      <td>{index}</td>
+      <td>{user.nom}</td>
+      <td>{user.prenom}</td>
+      <td>{user.age}</td>
+      <td>{user.ville}</td>
+    </tr> 
+  </>
 });
   return <>
     <form onSubmit={handleSubmit}>
       <h1>Formulaire</h1>
-      <div className='row'>  
+      <div className='myForm'>  
         <div className='column'>
-          <label>Nom:
+          <div className='row'>
+            <label htmFor='nom'>Nom:</label>
             <input 
               type="text" 
               name="nom" 
               value={user.nom || ""} 
               onChange={handleChange}
             />
-          </label>
-          <label>Prenom:
+          </div>
+          <div className='row'>
+            <label htmFor='prenom'>Prenom:</label>
             <input 
               type="text" 
               name="prenom" 
               value={user.prenom || ""} 
               onChange={handleChange} 
             />
-          </label>
+          </div>
         </div>
         <div className='column'>
-          <label>Age:
+          <div className='row'>
+            <label htmFor='age'>Age:</label>
             <input 
               type="text" 
               name="age" 
               value={user.age || ""} 
               onChange={handleChange} 
             />
-          </label>
-          <label>Ville:
+          </div>
+          <div className='row'>
+            <label htmFor='ville'>Ville:</label>
             <input 
               type="text" 
               name="ville" 
               value={user.ville || ""} 
               onChange={handleChange} 
             />
-          </label>
+          </div>
         </div>
       </div>
       <button type="submit">Envoyer</button>

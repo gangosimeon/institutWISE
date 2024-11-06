@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import './App.css';
 import './essai/users.css';
 import MyForm from './MyForm';                                                                        
+import Header from './component/Header';
 
 
-  function App() {
-    const Greeting = ({ name }) => {
-      return <h1>Hello, {name}!</h1>;
-  };
+function App() {
+
+  const Greeting = ({ name }) => <h1>Hello, {name}!</h1>;
 
   const name = "Siméon";
   const [count, setCount] = useState(0);
@@ -20,6 +20,7 @@ import MyForm from './MyForm';
     setCount(count - 1);
   }
   return <>
+    <Header />
     <Greeting name={name} />
     <div className="increment">
       <button onClick={incrementValue}>Increment</button>
@@ -29,8 +30,6 @@ import MyForm from './MyForm';
       <p>{count}</p>
     </div>
     <MyForm />
-
-    
   </>
 }
 
