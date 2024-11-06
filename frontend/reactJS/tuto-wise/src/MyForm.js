@@ -1,6 +1,7 @@
 import React, {useState } from 'react'
 import './essai/MyForm.css';
 
+
 function MyForm() {
   const [user, setUser] = useState({});
   
@@ -37,13 +38,14 @@ let userElements = users.map((user, index) =>{
     </tr> 
   </>
 });
+
   return <>
     <form onSubmit={handleSubmit}>
       <h1>Formulaire</h1>
       <div className='myForm'>  
         <div className='column'>
           <div className='row'>
-            <label htmFor='nom'>Nom:</label>
+            <label htmlFor='nom'>Nom:</label>
             <input 
               type="text" 
               name="nom" 
@@ -52,7 +54,7 @@ let userElements = users.map((user, index) =>{
             />
           </div>
           <div className='row'>
-            <label htmFor='prenom'>Prenom:</label>
+            <label htmlFor='prenom'>Prenom:</label>
             <input 
               type="text" 
               name="prenom" 
@@ -63,7 +65,7 @@ let userElements = users.map((user, index) =>{
         </div>
         <div className='column'>
           <div className='row'>
-            <label htmFor='age'>Age:</label>
+            <label htmlFor='age'>Age:</label>
             <input 
               type="text" 
               name="age" 
@@ -72,7 +74,7 @@ let userElements = users.map((user, index) =>{
             />
           </div>
           <div className='row'>
-            <label htmFor='ville'>Ville:</label>
+            <label htmlFor='ville'>Ville:</label>
             <input 
               type="text" 
               name="ville" 
