@@ -1,7 +1,7 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-article{
+/* article{
   display: inline-block;
   width: 25%;
   background-color: aquamarine;
@@ -31,7 +31,7 @@ aside{
 }
 aside> a{
   color: aliceblue;
-}
+} */
 
 /* Exemple  */
 p{
