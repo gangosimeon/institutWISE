@@ -10,14 +10,15 @@
 <body>
   <header id="mainHeader">
     <img src="/images/2.png" alt="logo du site" id="logoSite">
-    <h1>Mon site</h1>
+    <h1 class="accessibility">Menu principal</h1>
+    <p class="accessibility"><a href="#pageContent" title="Accéder directement au menu principal de ce site">Passer le menu</a></p>
     <nav id="mainNav">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="galeries.html">Galerie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">A propos</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html" title="Vers la page principal de ce site" >Accueil</a></li>
+        <li><a href="galeries.html" title="Vers les galeries de ce site">Galerie</a></li>
+        <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+        <li><a href="about.html" title="vers la page à propos de ce site">A propos</a></li>
+        <li><a href="blog.html" title="Vers la page blog de ce site">Blog</a></li>
       </ul>
     </nav>
     <button id="menuToggle" src="images/1f83ae2d5a3e0173d19983a03bda22.jpg" alt="Ouvrir / Fermer le menu"></button>
@@ -33,7 +34,7 @@
           <img src="images/soi.jpg" alt=""> 
           Lorem ipsum dolor sit amet, <a href="singleBlog.html#ch1">consectetur adipisicing elit</a>. Itaque repellendus sint ea voluptas eligendi? Sequi odit rem ipsum ullam temporibus corporis nisi, ipsa accusantium deserunt in magnam, sint iusto quis quae fugit maxime officiis quibusdam laudantium aliquam placeat dolore quos unde vitae! Facere quos possimus, aspernatur delectus pariatur et nemo?
         </p>
-        <p><a href="singleBlog.html">Lire la suite</a></p>
+        <p><a href="singleBlog.html" title="Vers la page single blog de ce site">Lire la suite</a></p>
       </article>
   
       <article>
@@ -46,7 +47,7 @@
           Lorem ipsum dolor sit amet, <a href="singleBlog.html#ch1">consectetur adipisicing elit</a>. Itaque repellendus sint ea voluptas eligendi? Sequi odit rem ipsum ullam temporibus corporis nisi, ipsa accusantium deserunt in magnam, sint iusto quis quae fugit maxime officiis quibusdam laudantium aliquam placeat dolore quos unde vitae! Facere quos possimus, aspernatur delectus pariatur et nemo?
         </p>
        
-        <p><a href="singleBlog.html">Lire la suite</a></p>
+        <p><a href="singleBlog.html" title="Vers la page single blog de ce site">Lire la suite</a></p>
       </article>
       <article>
         <header>
@@ -58,7 +59,7 @@
           Lorem ipsum dolor sit amet, <a href="singleBlog.html#ch1">consectetur adipisicing elit</a>. Itaque repellendus sint ea voluptas eligendi? Sequi odit rem ipsum ullam temporibus corporis nisi, ipsa accusantium deserunt in magnam, sint iusto quis quae fugit maxime officiis quibusdam laudantium aliquam placeat dolore quos unde vitae! Facere quos possimus, aspernatur delectus pariatur et nemo?
         </p>
        
-        <p><a href="singleBlog.html">Lire la suite</a></p>
+        <p><a href="singleBlog.html" title="Vers la page single blog de ce site">Lire la suite</a></p>
       </article>
     </main>
     <aside id="rightCol">
@@ -68,6 +69,12 @@
       </section>
       <section id="categories">
         <h1>Catégories</h1>
+        <ul>
+          <li><a href="#">Matériel <span>11</span></a></li>
+          <li><a href="#">Lightroom <span>2</span></a></li>
+          <li><a href="#">Techniques <span>4</span></a></li>
+          <li><a href="#">Voyage <span>15</span></a></li>
+        </ul>
       </section>
       <section id="blogArchives">
         <h1>Archives</h1>
