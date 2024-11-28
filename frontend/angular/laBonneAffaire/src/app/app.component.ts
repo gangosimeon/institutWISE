@@ -1,16 +1,11 @@
-import { Component , OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
+  standalone: false,
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'laBonneAffaire';
-  constructor(){}
-  ngOnInit(): void {
-    console.log("Ici OnInit");
-  }
 }

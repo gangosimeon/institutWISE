@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "LaBonneAffaire": {
+    "laBonneAffaire": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -60,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "LaBonneAffaire:build:production"
+              "buildTarget": "laBonneAffaire:build:production"
             },
             "development": {
-              "buildTarget": "LaBonneAffaire:build:development"
+              "buildTarget": "laBonneAffaire:build:development"
             }
           },
           "defaultConfiguration": "development"

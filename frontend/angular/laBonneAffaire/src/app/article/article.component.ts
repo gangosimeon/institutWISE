@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-article',
-  imports: [],
+  standalone: false,
+  
   templateUrl: './article.component.html',
   styleUrl: './article.component.css'
 })
