@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .navbar{
     position: fixed;
@@ -18,4 +19,23 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: 5%;
+=======
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-toggler{
+  color: white;
+}
+#home{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+>>>>>>> 280e871d284d4543a10fa1daaa5553fc985c85c9
 }
