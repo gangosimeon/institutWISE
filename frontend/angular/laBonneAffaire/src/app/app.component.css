@@ -1,0 +1,21 @@
+
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
