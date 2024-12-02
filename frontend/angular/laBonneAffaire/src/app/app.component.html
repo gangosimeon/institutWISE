@@ -11,55 +11,16 @@
     </ul>
   </div>
 </nav>
-
-<div id="home" class="container">
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
+<div  class="container">
+  <div id="alertMsg">
+    <p>{{message}}</p>
+  </div>
+  <div id="home">
+    <!--Transfert des données parents vers enfants à l'aide du decorateur @Input()-->
+    <app-article [titreArticle]="'Vélo'" [prixArticle]="prix1" (info)="onAffiche($event)"></app-article>
+    <app-article [titreArticle]="'Voiture'" [prixArticle]="prix2" (info)="onAffiche($event)"></app-article>
+    <app-article [titreArticle]="'Moto'" [prixArticle]="prix3" (info)="onAffiche($event)"></app-article>
+  </div>
 </div>
 <footer class="py-2 bg-black">
   <div class="container">

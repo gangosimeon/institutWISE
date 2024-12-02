@@ -1,23 +1,16 @@
-<p>article works! line1</p>
-<p>article works! line2</p>
-<p>article works! line3</p>
-<p>article works! line4</p>
-<p>article works! line5</p>
-<p>article works! line6</p>
-<p>article works! line7</p>
-<p>article works! line8</p>
-<p>article works! line9</p>
-<p>article works! line10</p>
-<p>article works! line11</p>
-<p>article works! line12</p>
-<p>article works! line13</p>
-<p>article works! line14</p>
-<p>article works! line15</p>
-<p>article works! line16</p>
-<p>article works! line17</p>
-<p>article works! line18</p>
-<p>article works! line19 </p>
-<p>article works! line20</p>
-<p>article works! line21</p>
-<p>article works! line22</p>
-<p>article works! line23</p>
+<div class="card articleInfo" style="width: 18rem;">
+    <!--Property binding-->
+    <img class="card-img-top" [src]="urlImg" [alt]="textAlternative">
+    <div class="card-body">
+    <!--Data binding-->
+      <h5 class="card-title">{{ titreArticle }}</h5>
+      <h6 class="card-title">{{ prixArticle }} $</h6>
+      <p class="card-text">Description</p>
+      <!--Event binding-->
+      <button href="#" class="btn btn-primary" (click)="onLike()">J'aime</button>
+      <p>Nombre(s) de like: {{nbreTotalLike}}</p>
+        <!--Two way binding-->
+      <input type="text" [(ngModel)]="comment">
+      <p>Commentaire: {{comment}}</p>
+    </div>
+  </div>
