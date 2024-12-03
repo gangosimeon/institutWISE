@@ -1,0 +1,15 @@
+.articleInfo{
+    width: 18rem;
+}
+
+.nolike{
+    background-color: blue;
+    color: white;
+}
+.show{
+    display: inline-block;
+}
+
+.hidden{
+    display: none;
+}
