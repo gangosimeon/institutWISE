@@ -1,14 +1,16 @@
-<div class="card articleInfo" style="width: 18rem;">
+  <div class="card articleInfo" style="width: 18rem;">
     <!--Property binding-->
     <img class="card-img-top" [src]="urlImg" [alt]="textAlternative">
     <div class="card-body">
-    <!--Data binding-->
+      <!--Data binding-->
       <h5 class="card-title" [ngStyle]=" {color: getColor()}">
         {{ titreArticle | uppercase}} 
         <span *ngIf="dispo===false">-Indisponible</span>
       </h5>
       <h6 class="card-title">{{ prixArticle }} $</h6>
       <p class="card-text">{{description}}</p>
+      <a routerLink="/details/{{articleId}}">=> Voir détails {{articleId}}</a>
+      <hr>
       <!--Event binding-->
       <button 
         (click)="onLike()"

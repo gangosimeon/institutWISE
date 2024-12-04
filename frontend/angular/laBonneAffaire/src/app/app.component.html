@@ -11,29 +11,9 @@
     </ul>
   </div>
 </nav>
-<div  class="container">
-  <div id="alertMsg">
-    <p>{{message}}</p>
-  </div>
-  <div id="home">
-    <!--Transfert des données parents vers enfants à l'aide du decorateur @Input()-->
-    <!-- Avec ngFor -->
-    <app-article
-     avec nFOr 
-      *ngFor="let element of liste"
-      [titreArticle]="element.titreArticle"
-      [prixArticle]="element.prixArticle"
-      [description]="element.description"
-      [urlImg]="element.urlImg"
-      [dispo]="element.dispo"
-      [nbreTotalLike]="element.nbreTotalLike"
-      (info)="onAffiche($event)"
-    ></app-article>
-    <!-- sans ngFor -->
-    <!-- <app-article [titreArticle]="'Voiture'" [prixArticle]="prix2" (info)="onAffiche($event)"></app-article>
-    <app-article [titreArticle]="'Moto'" [prixArticle]="prix3" (info)="onAffiche($event)"></app-article> -->
-  </div>
-</div>
+
+<router-outlet></router-outlet>
+
 <footer class="py-2 bg-black">
   <div class="container">
     <p class="n-0 text-center text-white">CopyRight &copy; La Bonne Affaire</p>

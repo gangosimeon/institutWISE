@@ -9,6 +9,7 @@ export class DataService {
   
   listeArticles=[
     {
+      id:1,
       titreArticle:"Vélo",
       prixArticle:50,
       urlImg:"/assets/velo.jpg",
@@ -18,6 +19,7 @@ export class DataService {
       dispo :false,
     },
     {
+      id:2,
       titreArticle:"Voiture",
       prixArticle:650,
       urlImg:"/assets/voiture.jpg",
@@ -27,6 +29,7 @@ export class DataService {
       dispo :true,
     },
     {
+      id:3,
       titreArticle:"Moto",
       prixArticle:450,
       urlImg:"/assets/moto.jpg",

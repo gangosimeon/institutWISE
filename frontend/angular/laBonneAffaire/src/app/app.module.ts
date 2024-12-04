@@ -7,13 +7,21 @@ import { ArticleComponent } from './article/article.component';
 import { FormsModule } from '@angular/forms';
 
 import { DataService } from './data.service';
+import { ListeComponent } from './liste/liste.component';
+import { DetailsComponent } from './details/details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AjoutComponent } from './ajout/ajout.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleComponent
+    ArticleComponent,
+    ListeComponent,
+    DetailsComponent,
+    PageNotFoundComponent,
+    AjoutComponent
   ],
   imports: [
     BrowserModule,

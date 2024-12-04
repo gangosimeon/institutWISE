@@ -20,6 +20,7 @@ export class ArticleComponent implements OnInit {
   @Input() nbreTotalLike:number;
   @Input() urlImg:string;
   @Input() dispo :boolean;
+  @Input() articleId:number;
   //Données à transmettre de l'enfant vers le parents
   @Output() info = new EventEmitter<string>();
   // declaration des variables 
