@@ -1,14 +1,27 @@
 <h1>Formulaire d'ajout</h1>
-<form>
-    <div class="form-group">
-      <label for="titre">Titre</label>
-      <input type="text" class="form-control" id="titre"  placeholder="">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group" >
+      <label for="title">Titre</label>
+      <input type="text" class="form-control" id="title" name="title"  [(ngModel)]="titleToAdd" #title="ngModel" minlength="4" required>
+      <div *ngIf="title.invalid && (title.dirty || title.touched)" [ngStyle]="{color:'red'}">
+        <div *ngIf="title.errors?.['required']">
+          <small>Titre obligatoire.</small>
+        </div>
+        <div *ngIf="title.errors?.['minlength']">
+          <small>Le nombre de caractère minimum est 4 lettres</small>
+        </div>
+      </div>
     </div>
     <br>
     <div class="form-group">
-      <label for="prix">Prix</label>
-      <input type="number" class="form-control" id="prix" placeholder="">
+      <label for="price">Prix</label>
+      <input type="number" class="form-control" id="price" name="price"  [(ngModel)]="priceToAdd" #price="ngModel" required>
+      <div *ngIf="price.invalid && (price.dirty || price.touched)" [ngStyle]="{color:'red'}">
+        <div *ngIf="price.errors?.['required']">
+          <small>Price obligatoire.</small>
+        </div>
+      </div>
     </div>
     <br>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Submit</button>
 </form>
