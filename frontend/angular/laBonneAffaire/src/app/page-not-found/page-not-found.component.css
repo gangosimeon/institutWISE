@@ -1,3 +1,8 @@
-/* #infoNotFound{
-
-} */
+#infoNotFound{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-ajout',
@@ -8,14 +8,14 @@ import { NgForm } from '@angular/forms';
 })
 export class AjoutComponent implements OnInit {
 
-  titleToAdd="";
-  priceToAdd="";
+  titleToAdd=new FormControl("");
+  priceToAdd=new FormControl("");
   ngOnInit(): void {
     
   }
   onSubmit(form:NgForm){
-    const newTitle = this.titleToAdd;
-    const newPrice = this.priceToAdd;
+    const newTitle = this.titleToAdd.value;
+    const newPrice = this.priceToAdd.value;
     console.log(`newTitle: ${newTitle}  et newPrice : ${newPrice}`);
   }
 }

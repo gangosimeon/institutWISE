@@ -1,8 +1,25 @@
-<h1>Formulaire d'ajout</h1>
-<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+<div class=" container myForm">
+  <h1>Formulaire d'ajout</h1>
+  
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div class="form-group" >
       <label for="title">Titre</label>
-      <input type="text" class="form-control" id="title" name="title"  [(ngModel)]="titleToAdd" #title="ngModel" minlength="4" required>
+      <input type="text" class="form-control" id="title" name="title"  [formControl]="titleToAdd" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="price">Prix</label>
+      <input type="number" class="form-control" id="price" name="price"  [formControl]="priceToAdd" required>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Submit</button>
+  </form>
+</div>
+<!-- 
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group" >
+      <label for="title">Titre</label>
+      <input type="text" class="form-control" id="title" name="title"  [formControl]="titleToAdd" [(ngModel)]="titleToAdd" #title="ngModel" minlength="4" required>
       <div *ngIf="title.invalid && (title.dirty || title.touched)" [ngStyle]="{color:'red'}">
         <div *ngIf="title.errors?.['required']">
           <small>Titre obligatoire.</small>
@@ -15,7 +32,7 @@
     <br>
     <div class="form-group">
       <label for="price">Prix</label>
-      <input type="number" class="form-control" id="price" name="price"  [(ngModel)]="priceToAdd" #price="ngModel" required>
+      <input type="number" class="form-control" id="price" name="price"  [formControl]="priceToAdd" [(ngModel)]="priceToAdd"  #price="ngModel" required>
       <div *ngIf="price.invalid && (price.dirty || price.touched)" [ngStyle]="{color:'red'}">
         <div *ngIf="price.errors?.['required']">
           <small>Price obligatoire.</small>
@@ -24,4 +41,5 @@
     </div>
     <br>
     <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Submit</button>
-</form>
+  </form>
+</div> -->

@@ -6,11 +6,6 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
-  // titreArticle:string="Titre de l'article";
-  // prixArticle:number=12;
-  //urlImg:string="https://via.placeholder.com/400x250"
-  // textAlternative:string= "texte alternative de l'image."
-  // nbreTotalLike:number=0;
   comment:string="Ceci est un commentaire "
   // Données à transmettre du parent vers l'enfant
   @Input() titreArticle:string;
