@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import {} from 'rxjs'
 
 @Component({
   selector: 'app-liste',
@@ -8,16 +9,23 @@ import { DataService } from '../data.service';
 })
 export class ListeComponent implements OnInit {
   message:string="";
-  liste=[];
+  liste:any=[];
   constructor(private dataService: DataService){}
   
   ngOnInit(): void {
-    this.liste=this.dataService.listeArticles;
+    // this.liste=this.dataService.listeArticles;
+    this.getListArticles()
   }
 
 
   
   onAffiche(event:string){
     return this.message="Vous avez liker l'article : "+event;
+  }
+  getListArticles(){
+    return this.dataService.getAllArticlesServe().subscribe((liste)=>{
+      this.liste=liste;
+      console.log(liste)
+    })
   }
 }
