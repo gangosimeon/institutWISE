@@ -6,12 +6,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient) {}
+
+
   
   getAllArticlesServe(){
     return this.httpClient.get<any>('https://liste-articles-tuto-angular-default-rtdb.firebaseio.com/data.json');
   }
-
   getArticle(id:number){
     const articles=this.getAllArticlesServe().subscribe(articles=>{
       articles.find(articles=>{

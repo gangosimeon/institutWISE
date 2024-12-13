@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import {} from 'rxjs'
+import { Article } from '../models/article.model';
 
 @Component({
   selector: 'app-liste',
@@ -9,7 +10,8 @@ import {} from 'rxjs'
 })
 export class ListeComponent implements OnInit {
   message:string="";
-  liste:any=[];
+  // liste:Article;
+  liste:any=[]
   constructor(private dataService: DataService){}
   
   ngOnInit(): void {
