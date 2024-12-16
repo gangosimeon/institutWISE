@@ -44,4 +44,6 @@ export class ArticleComponent implements OnInit {
       return this.red
     }
   }
+
+  
 }
