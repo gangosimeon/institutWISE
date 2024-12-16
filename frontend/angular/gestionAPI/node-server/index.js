@@ -8,7 +8,7 @@ const PORT = 3000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/CRMdb')
+mongoose.connect('mongodb://localhost/CRMdb')
 .then(() => {console.log('Connexion réussie à MongoDB');})
 .catch((error) => console.error('Erreur de connexion à MongoDB:', error));
 // bodyparser setup
