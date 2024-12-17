@@ -1,9 +1,4 @@
-
-<div class="header-container" style="text-align: center;">
-  <h1>{{ title }} app is running!</h1>
-</div>
-<div class="card-container " style="text-align: center;">
-  <div *ngFor="let contact of contacts">
-    <li>{{contact.firstName}}</li>
-  </div>
+<div style="text-align: center;">
+  <app-header></app-header>
+  <app-contacts></app-contacts>
 </div>
