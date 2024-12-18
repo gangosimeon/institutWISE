@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { ContactsService } from '../contacts.service';
+import { ContactsService } from '../services/contacts.service';
 
 @Component({
   selector: 'app-contacts',
