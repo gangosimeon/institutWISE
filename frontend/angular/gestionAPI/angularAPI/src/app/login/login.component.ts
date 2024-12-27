@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactsService } from '../services/contacts.service';
 import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit{
 
   constructor(
     private api : ContactsService,
-    private auth: AuthService
+    private auth: AuthService,
+    private router : Router
   ){}
 
   ngOnInit(): void {
@@ -35,4 +37,7 @@ export class LoginComponent implements OnInit{
     });
   }
 
+  signupPage(){
+    this.router.navigate(['signup']);
+  }
 }

@@ -1,5 +1,6 @@
 <div class="row">
     <form class="col s12" #form="ngForm" (ngSubmit)="addNewContact(form.value)">
+        <button (click)="seDeconnecter()">Se deconnecter</button>
         <div class="row">
             <div class="input-field col s4">
                 <input placeholder="Prenom" name="firstName" type="text" [(ngModel)]="firstName">

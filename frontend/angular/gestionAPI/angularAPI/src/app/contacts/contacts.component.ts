@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { ContactsService } from '../services/contacts.service';
+import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacts',
@@ -29,7 +31,7 @@ export class ContactsComponent  implements OnInit{
     'padding': '22px 18px'
   }
 
-  constructor(private contactService:ContactsService){}
+  constructor(private contactService:ContactsService, private auth:AuthService, private router:Router){}
 
   public contacts:any;
 
@@ -44,6 +46,7 @@ export class ContactsComponent  implements OnInit{
   ngOnInit(): void {
     this.getAllContacts()
     this.state
+    // this.seDeconneter()
   }
 
   getAllContacts(){
@@ -65,6 +68,11 @@ export class ContactsComponent  implements OnInit{
         console.error("Echec de l'envoie de la donnée", err);
       }
     ); 
-    
+  }
+
+  seDeconnecter(){
+    this.auth.logout();
+    console.log('Utilisateur déconnecté');
+    this.router.navigate(['/login']);
   }
 }
