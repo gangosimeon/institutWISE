@@ -1,0 +1,48 @@
+<div class="container">
+    <form [formGroup]="registerData" (ngSubmit)="registerValueSubmit()">
+        <div class="row">
+            <div class="col">
+                <input placeholder="Nom" name="lastName" type="text" formControlName="lName">
+            </div>
+            <div class="col">
+                <input placeholder="Prenom" name="firstName" type="text" formControlName="fName">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col">
+                <select formControlName="gender">
+                    <option value="">Genre</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autres">Autres</option>
+                </select>
+            </div>
+            <div class="col">
+                <input placeholder="Date de naissance" name="birthDate" type="date" formControlName="birthDate">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input placeholder="Nom utilisateur" name="login" type="email" formControlName="log">
+            </div>
+            <div class="col">
+                <input placeholder="Entreprise"  name="companyName" type="text" formControlName="company">
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col">
+                <input placeholder="Mot de passe" name="password" type="text" formControlName="pwd">
+            </div>
+            <div class="col">
+                <input placeholder="Confirmer le mot de passe" name="password" type="text" formControlName="pwdConfirm">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <button type="submit"> S'inscrire</button>
+            </div>
+            
+        </div>
+    </form>
+</div>
