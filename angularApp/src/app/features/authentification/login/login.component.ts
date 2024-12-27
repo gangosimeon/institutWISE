@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       login: this.loginData.get('log')?.value,
       password: this.loginData.get('pwd')?.value
     }
-    this.accessDataService.postLoginData(authentificationUser)
+    this.accessDataService.postLoginData(authentificationUser);
   }
 
 }
