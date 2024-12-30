@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
   constructor(private dataAccessService: DataAccessService){}
 
   ngOnInit(): void {
-    
+    this.dataAccessService.getRegisterData()
   }
 
   registerValueSubmit(){

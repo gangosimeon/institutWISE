@@ -14,7 +14,7 @@ export class DataAccessService implements OnInit{
   constructor( public httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    
+
   }
 
 
@@ -22,8 +22,6 @@ export class DataAccessService implements OnInit{
     console.log('credentiel in service',credentiel)
     this.httpClient.post(`http://localhost:3000/user`,credentiel).subscribe((res)=>{
       console.log('res dans services',res);
-
-      
     });
   }
 
@@ -33,6 +31,11 @@ export class DataAccessService implements OnInit{
     this.httpClient.post(`http://localhost:3000/user`,user).subscribe((res)=>{
       console.log('res dans services',res);
     });
-    
+  }
+
+
+  getRegisterData(){
+    console.log('register in service')
+    return this.httpClient.get(`http://localhost:3000/user`);
   }
 }
