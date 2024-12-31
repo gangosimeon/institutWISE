@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { User } from 'src/app/shared/models/user.model';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { User } from 'src/app/shared/models/data.model';
 import { DataAccessService } from 'src/app/shared/services/data-access.service';
 
 @Component({
@@ -9,14 +9,14 @@ import { DataAccessService } from 'src/app/shared/services/data-access.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
+  sucess:string="";
   error:string="";
   registerData : FormGroup = new FormGroup({
     fName: new FormControl(''),
     lName:  new FormControl(''),
     gender:  new FormControl(''),
     birthDate: new FormControl(''),
-    log: new FormControl(''),
+    log: new FormControl('',[Validators.minLength(4)]),
     pwd: new FormControl(''),
     pwdConfirm: new FormControl(''),
     company: new FormControl('')
@@ -29,8 +29,14 @@ export class SignupComponent implements OnInit {
   }
 
   registerValueSubmit(){
-    if(this.registerData.get('pwd')?.value!=this.registerData.get('pwdConfirm')?.value){
-      this.error="Les mots de passe ne sont pas identique!"
+    if(!this.registerData.valid || this.registerData.get('pwd')?.value!=this.registerData.get('pwdConfirm')?.value){
+      this.error="Les mots de passe ne sont pas identiques!"
+      if(this.registerData.get('pwd')?.value!=this.registerData.get('pwdConfirm')?.value){
+        this.error="Les mots de passe ne sont pas identiques!"
+      }
+      if(!this.registerData.get('log')?.valid){
+        this.error="Le username doit contenir plus de 4 lettres !";
+      }
     }else{
       const userRegisterData :User = {
         firstName: this.registerData.get('fName')?.value,
@@ -56,7 +62,7 @@ export class SignupComponent implements OnInit {
           this.error = 'Une erreur système est survenue lors de votre enrégistrement';
         },
         complete: () => {
-          
+
         }
     });
     }

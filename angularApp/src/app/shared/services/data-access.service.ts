@@ -1,6 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
-import { Credential } from '../models/credentiel.model';
-import { User } from '../models/user.model';
+import { Credential ,User, WsResponse} from '../models/data.model';
 import { HttpClient } from '@angular/common/http';
 import {catchError, map, retry, tap} from 'rxjs/operators';
 import {Observable, Subject, throwError} from 'rxjs';
@@ -34,12 +33,12 @@ export class DataAccessService implements OnInit{
   //     console.log('res dans services',res);
   //   });
   // }
-  public postRegisterData(user:User): Observable<any> {
-    return this.httpClient.post<any>(this.newProperty + '/user', user).pipe(
+  public postRegisterData(user:User): Observable<WsResponse> {
+    return this.httpClient.post<WsResponse>(this.newProperty + '/user', user).pipe(
         tap((data) => console.log('Result', data)),
         catchError((error) => throwError(error))
     );
-}
+  }
 
   getRegisterData(){
     console.log('register in service')
