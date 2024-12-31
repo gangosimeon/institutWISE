@@ -3,15 +3,38 @@ import { UserSchema } from '../models/userModel';
 
 const User = mongoose.model('User', UserSchema);
 
+
 export const addNewUser = async (req, res) => {
     try {
         let newUser = new User(req.body);
-        let user = await newUser.save(); // Utiliser await sans callback
-        res.json(user);
+        if(newUser.login== "Constant"){
+            return res.status(202).json({
+                status: 202,
+                data: newUser,
+                comment: 'Le login que vous utiliser est déja pris'
+            })
+        }else{
+            let user = await newUser.save(); // Utiliser await sans callback
+            res.json({
+                status: 200,
+                data: user,
+                comment: 'Enregistrement réaliser avec succes',
+            });
+        }
+
     } catch (err) {
         res.send(err);
     }
 };
+// export const addNewUser = async (req, res) => {
+//     try {
+//         let newUser = new User(req.body);
+//         let user = await newUser.save(); // Utiliser await sans callback
+//         res.json(user);
+//     } catch (err) {
+//         res.send(err);
+//     }
+// };
 // export const addNewUser = async(req, res) => {
 //     let newUser =await new User(req.body);
 

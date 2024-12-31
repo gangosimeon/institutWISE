@@ -5,6 +5,5 @@ export interface User{
     birthDate:string ;
     login:string ;
     password:string ;
-    passwordConfirm:string;
     companyName:string
 }
