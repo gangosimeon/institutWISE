@@ -36,6 +36,7 @@
             <div class="col">
                 <input placeholder="Confirmer le mot de passe" name="password" type="text" formControlName="pwdConfirm">
             </div>
+            <span *ngIf="error" style="color:red">{{error}}</span>
         </div>
         
         <div class="row">

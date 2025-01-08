@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Credential } from 'src/app/shared/models/credentiel.model';
+import { Credential } from 'src/app/shared/models/data.model';
 import { DataAccessService } from 'src/app/shared/services/data-access.service';
 
 @Component({
